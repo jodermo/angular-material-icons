@@ -48,8 +48,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - This project utilizes the Angular framework and Angular Material components.
 - Icons are sourced from the Angular Material Icons library.
-
-## Contact
-
-For questions or inquiries, you can contact the project maintainer at [contact@html5-apps.com](mailto:contact@html5-apps.com).
-
