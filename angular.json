@@ -24,7 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/.htaccess",
               "src/favicon.ico",
+              "src/manifest.json",
+              "src/browserconfig.xml",
               "src/assets"
             ],
             "styles": [
@@ -93,7 +96,10 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/.htaccess",
               "src/favicon.ico",
+              "src/manifest.json",
+              "src/browserconfig.xml",
               "src/assets"
             ],
             "styles": [

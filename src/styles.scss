@@ -1,11 +1,18 @@
 
 html, body {
   height: 100%;
+
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: black;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 
@@ -18,6 +25,6 @@ body {
   pointer-events: all;
 }
 
-.mat-card{
+.mat-card {
   margin: 1rem;
 }
