@@ -9,7 +9,7 @@
       <mat-optgroup *ngFor="let iconCategory of icons.availableCategories" [label]="iconCategory.name"
                     [disabled]="!iconCategory.icons">
         <mat-option *ngFor="let icon of iconCategory.icons" [value]="icon">
-          <mat-icon *ngIf="icons.selectedIcon !== icon.ligature">{{icon.ligature}}</mat-icon>
+          <mat-icon *ngIf="icons.selectedIcon.ligature !== icon.ligature">{{icon.ligature}}</mat-icon>
           <span>{{icon.ligature}}</span>
         </mat-option>
       </mat-optgroup>
