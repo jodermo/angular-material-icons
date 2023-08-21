@@ -1,0 +1,15 @@
+.icon-preview {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .html-box {
+    padding: 0 1rem;
+    pre{
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+    }
+
+  }
+}

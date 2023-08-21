@@ -1,0 +1,9 @@
+<mat-form-field  class="example-form-field">
+  <mat-label>{{searchLabel}}</mat-label>
+  <input matInput type="text" [(ngModel)]="icons.searchQuery" (keyup)="icons.changeSearchQuery()">
+  <button matSuffix mat-icon-button aria-label="Clear" [disabled]="!icons.searchQuery"
+          (click)="icons.searchQuery=''; icons.changeSearchQuery()">
+    <mat-icon *ngIf="icons.searchQuery">close</mat-icon>
+    <mat-icon *ngIf="!icons.searchQuery">search</mat-icon>
+  </button>
+</mat-form-field>

@@ -1,0 +1,24 @@
+<div class="angular-widget icon-select">
+  <button mat-flat-button color="secondary" [disabled]="!icons.selectedIcon" (click)="icons.selectIcon(icons.selectedIcon)">
+    <mat-icon>{{icons.selectedIcon ? icons.selectedIcon.ligature : '-'}}</mat-icon>
+  </button>
+  <mat-form-field appearance="fill">
+    <mat-label>{{label}} ({{icons.iconsCount}})</mat-label>
+    <mat-select [(ngModel)]="icons.selectedIcon" (ngModelChange)="icons.onChange()">
+      <mat-option>-</mat-option>
+      <mat-optgroup *ngFor="let iconCategory of icons.availableCategories" [label]="iconCategory.name"
+                    [disabled]="!iconCategory.icons">
+        <mat-option *ngFor="let icon of iconCategory.icons" [value]="icon.ligature">
+          <mat-icon *ngIf="icons.selectedIcon !== icon.ligature">{{icon.ligature}}</mat-icon>
+          <span>{{icon.ligature}}</span>
+        </mat-option>
+      </mat-optgroup>
+    </mat-select>
+  </mat-form-field>
+  <button *ngIf="canToggleSearch" mat-icon-button color="secondary" (click)="showSearch = !showSearch">
+    <mat-icon>search</mat-icon>
+  </button>
+  <app-icon-search *ngIf="showSearch"></app-icon-search>
+</div>
+
+

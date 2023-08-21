@@ -1,0 +1,47 @@
+<mat-toolbar>
+  <h1>Angular - Material Icons</h1>
+
+  <span class="spacer"></span>
+
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<mat-card>
+  <mat-card-title>
+    <app-icon-search></app-icon-search>
+  </mat-card-title>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    <span>Selected Icon</span>
+  </mat-card-title>
+  <mat-card-content>
+    <div class="selected-icon-preview">
+      <app-icon-select></app-icon-select>
+      <app-icon-preview [icon]="icons.previewIcon"></app-icon-preview>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+
+  <mat-card-content>
+    <app-icon-list></app-icon-list>
+  </mat-card-content>
+</mat-card>
+<app-icon-copy-dialog></app-icon-copy-dialog>
+
+<span class="footer-space"></span>
+<mat-toolbar class="footer">
+  <span>
+    <mat-icon>copyright</mat-icon>
+    2023 - By Moritz Petzka
+  </span>
+  <span>
+  Website:<a href="https://petzka.com" target="_blank">https://petzka.com</a>
+  </span>
+  <span>
+  Source Code:<a href="https://github.com/jodermo/angular-material-icons" target="_blank">https://github.com/jodermo/angular-material-icons</a>
+  </span>
+  <span class="spacer"></span>
+</mat-toolbar>

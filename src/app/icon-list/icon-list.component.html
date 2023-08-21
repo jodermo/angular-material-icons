@@ -1,0 +1,20 @@
+<table>
+
+  <tbody *ngFor="let iconCategory of icons.availableCategories">
+  <tr *ngFor="let icon of iconCategory.icons" (click)="icons.selectIcon(icon)" class="pointer">
+    <th>
+      <mat-icon>{{icon.ligature}}</mat-icon>
+    </th>
+    <td>
+      <span>{{icon.ligature}}</span>
+    </td>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+  </tr>
+  </tbody>
+
+</table>
