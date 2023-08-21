@@ -7,10 +7,5 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-// import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
-
-platformBrowserDynamic().bootstrapModule(AppModule, {
-
-})
-  .catch(err => console.error(err));
+platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err));
