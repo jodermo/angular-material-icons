@@ -1,11 +1,9 @@
 <div class="icon-preview" *ngIf="icon">
-  <span class="spacer"></span>
-  <div class="html-box">
-    <b>HTML:</b>
+  <div class="html-box spacer">
     <pre><code [innerText]="icons.iconHTML(icon)"></code></pre>
   </div>
-  <span class="spacer"></span>
-  <div>
+  <span class="spacer" *ngIf="showCopyButton"></span>
+  <div *ngIf="showCopyButton">
     <button mat-flat-button (click)="icons.copyToClipBoard(icons.iconHTML(icon))">
       <mat-icon>content_copy</mat-icon>
       <span>Copy to Clipboard</span>

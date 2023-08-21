@@ -19,6 +19,7 @@ export class IconSelectComponent extends IconListComponent{
 
   @Output() onSelectIcon = new EventEmitter<string>();
   @Output() onChooseIcon = new EventEmitter<string>();
+  selectedIcon: any;
 
 
 
@@ -26,6 +27,11 @@ export class IconSelectComponent extends IconListComponent{
     super(icons);
     icons.onSelectIcon = this.onSelectIcon;
     icons.onChooseIcon = this.onChooseIcon;
+  }
+
+  override ngOnInit() {
+    super.ngOnInit();
+    this.selectedIcon = this.icons.selectedIcon;
   }
 
 

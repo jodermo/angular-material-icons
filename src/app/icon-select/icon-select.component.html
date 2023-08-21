@@ -4,11 +4,11 @@
   </button>
   <mat-form-field appearance="fill">
     <mat-label>{{label}} ({{icons.iconsCount}})</mat-label>
-    <mat-select [(ngModel)]="icons.selectedIcon" (ngModelChange)="icons.onChange()">
+    <mat-select [(ngModel)]="icons.selectedIcon" (ngModelChange)="icons.selectIcon(icons.selectedIcon)">
       <mat-option>-</mat-option>
       <mat-optgroup *ngFor="let iconCategory of icons.availableCategories" [label]="iconCategory.name"
                     [disabled]="!iconCategory.icons">
-        <mat-option *ngFor="let icon of iconCategory.icons" [value]="icon.ligature">
+        <mat-option *ngFor="let icon of iconCategory.icons" [value]="icon">
           <mat-icon *ngIf="icons.selectedIcon !== icon.ligature">{{icon.ligature}}</mat-icon>
           <span>{{icon.ligature}}</span>
         </mat-option>

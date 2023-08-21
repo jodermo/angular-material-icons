@@ -9,6 +9,7 @@ import {IconsService} from "../icons.service";
 export class IconPreviewComponent implements OnInit {
 
   @Input() icon?: any;
+  @Input() showCopyButton = false;
 
   constructor(public icons: IconsService) {
 

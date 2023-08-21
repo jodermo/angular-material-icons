@@ -9,6 +9,32 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: black;
   color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+
+  .large-icon{
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+  }
+  .medium-icon{
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+  }
+  .default-icon{
+
+  }
+  .small-icon{
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+  }
+
+
 }
 
 a {
@@ -28,3 +54,9 @@ a {
 .mat-card {
   margin: 1rem;
 }
+
+.horizontal-flex{
+  display: flex;
+}
+
+
